@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stopwatch</h1>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="icon">🌙</span>
+            </button>
+        </header>
+        
+        <div class="timer-container">
+            <div class="timer">
+                <span id="minutes">00</span><span class="separator">:</span><span id="seconds">00</span><span class="separator">:</span><span id="milliseconds">00</span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button id="start" class="btn primary">Start</button>
+            <button id="pause" class="btn warning">Pause</button>
+            <button id="reset" class="btn danger">Reset</button>
+            <button id="lap" class="btn info">Lap</button>
+        </div>
+        
+        <div class="laps-container">
+            <h2>Lap Times</h2>
+            <div class="laps-header">
+                <span>Lap</span>
+                <span>Time</span>
+                <span>Split</span>
+            </div>
+            <div class="laps-wrapper">
+                <ul id="laps"></ul>
+            </div>
+            <button id="clear-laps" class="btn secondary">Clear Laps</button>
+        </div>
+        
+        <footer>
+            <p>Press <kbd>Space</kbd> to start/pause | <kbd>R</kbd> to reset | <kbd>L</kbd> for lap</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
