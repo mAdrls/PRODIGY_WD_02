@@ -14,4 +14,5 @@ This is a **fully functional stopwatch** with start, pause, reset, and lap featu
 - **JavaScript** → For stopwatch functionality  
 
 
-
+## 🚀 Live Demo  
+Check it out here: **[GitHub Pages Link](https://madrls.github.io/PRODIGY_WD_02/)** 
