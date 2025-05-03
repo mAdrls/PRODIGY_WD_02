@@ -11,6 +11,7 @@ const lapsList = document.getElementById("laps");
 const themeToggle = document.getElementById("theme-toggle");
 
 // Timer variables
+
 let startTime;
 let elapsedTime = 0;
 let timerInterval;
@@ -21,12 +22,14 @@ let lapTimes = [];
 let savedLaps = [];
 
 // Check for saved theme preference
+
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-theme');
     themeToggle.innerHTML = '<span class="icon">☀️</span>';
 }
 
 // Check for saved laps
+
 const loadSavedLaps = () => {
     const saved = localStorage.getItem('stopwatchLaps');
     if (saved) {
